@@ -200,7 +200,7 @@ $(".chat_user").hover(
 
   // 讀取留言並顯示
   db.collection('messages')
-  .orderBy('timestamp', 'asc') // 按時間排序，舊的在上、新的在下
+  .orderBy('timestamp', 'desc') // 按時間排序，舊的在上、新的在下
   .onSnapshot(function (snapshot) {
     $messagesContainer.empty(); // 清空再重新渲染
 
