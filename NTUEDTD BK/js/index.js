@@ -22,7 +22,7 @@ $(".report_item").hover(
     function () {
         if ($(window).width() < 400) {
             $(this).find(".report_word_box").css({
-                transform:"translateY(68px)",
+                transform:"translateY(60px)",
                 backgroundColor: "rgba(0, 0, 0, 0)"
             }).find(".report_word_p").css({
               opacity: 0
